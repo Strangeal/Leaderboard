@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard</title>
+<script defer src="runtime.js"></script><script defer src="index.js"></script></head>
+<body>
+  <header>
+    <h1 class="heading">Leaderboard</h1>
+  </header>
+  <main>
+    <section>
+      <div class="scores">
+        <div class="scores__board">
+              <div class="scores__head">
+                <h3 class="scores__heading">Recent scores</h3>
+                <button class="refresh__btn" type="submit">
+                  <a href="#">Refresh</a>
+                </button>
+              </div>
+
+            <ul class="scores__line">
+              <li class="scores__record">
+                <span>Name:</span>
+                <span>100</span>
+              </li>
+              <li class="scores__record">
+                <span>Name:</span>
+                <span>50</span>
+              </li>
+              <li class="scores__record">
+                <span>Name:</span>
+                <span>15</span>
+              </li>
+              <li class="scores__record">
+                <span>Name:</span>
+                <span>15</span>
+              </li>
+              <li class="scores__record">
+                <span>Name:</span>
+                <span>15</span>
+              </li>
+              <li class="scores__record">
+                <span>Name:</span>
+                <span>15</span>
+              </li>
+              <li class="scores__record">
+                <span>Name:</span>
+                <span>15</span>
+              </li>
+            </ul>
+        </div>
+        <div class="scores__form__container">
+          <h3 class="form__heading">Add your score</h3>
+          <form class="scores__form">
+            <div class="form__input">
+              <input class="input__space" type="text" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form__input">
+              <input class="input__space" type="number" name="score" placeholder="Your score" required>
+            </div>
+            <button class="form__btn" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
