@@ -1,8 +1,8 @@
-# Todo-list-review
+# Leaderboard
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Microverse Todo-list Project
+# Microverse Leaderboard Project
 
 > **The leaderboard website displays game scores submitted by different players. It also allows you to submit your score using the form section.**
 
