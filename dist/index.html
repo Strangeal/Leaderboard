@@ -8,7 +8,7 @@
 <script defer src="runtime.js"></script><script defer src="index.js"></script></head>
 <body>
   <header>
-    <h1 class="heading">Leaderboard</h1>
+    <h1 class="heading">Leaderboard 🥇</h1>
   </header>
   <main>
     <section>
@@ -16,50 +16,19 @@
         <div class="scores__board">
               <div class="scores__head">
                 <h3 class="scores__heading">Recent scores</h3>
-                <button class="refresh__btn" type="submit">
-                  <a href="#">Refresh</a>
-                </button>
+                <button class="refresh__btn" type="submit">Refresh</button>
               </div>
 
-            <ul class="scores__line">
-              <li class="scores__record">
-                <span>Name:</span>
-                <span>100</span>
-              </li>
-              <li class="scores__record">
-                <span>Name:</span>
-                <span>50</span>
-              </li>
-              <li class="scores__record">
-                <span>Name:</span>
-                <span>15</span>
-              </li>
-              <li class="scores__record">
-                <span>Name:</span>
-                <span>15</span>
-              </li>
-              <li class="scores__record">
-                <span>Name:</span>
-                <span>15</span>
-              </li>
-              <li class="scores__record">
-                <span>Name:</span>
-                <span>15</span>
-              </li>
-              <li class="scores__record">
-                <span>Name:</span>
-                <span>15</span>
-              </li>
-            </ul>
+            <ul class="scores__line"></ul>
         </div>
         <div class="scores__form__container">
           <h3 class="form__heading">Add your score</h3>
           <form class="scores__form">
             <div class="form__input">
-              <input class="input__space" type="text" name="name" placeholder="Your name" required>
+              <input class="input__space" id="input__name" type="text" name="name" placeholder="Your name" required>
             </div>
             <div class="form__input">
-              <input class="input__space" type="number" min="0" name="score" placeholder="Your score" required>
+              <input class="input__space" id="input__score" type="number" min="0" name="score" placeholder="Your score" required>
             </div>
             <button class="form__btn" type="submit">Submit</button>
           </form>
