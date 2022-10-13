@@ -17,7 +17,7 @@
 
 ## Live Demo
 
-[**See Project 🚀**]();
+[**See Project 🚀**](https://strangeal.github.io/Leaderboard/dist/);
 
 ## Get Started
 
