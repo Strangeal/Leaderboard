@@ -10,7 +10,11 @@ const listPost = (list) => {
   list
     .sort((a, b) => b.score - a.score)
     .forEach((each) => {
-      dataContainerUl.innerHTML += `<li class="scores__record">${each.user} : ${each.score}</li>`;
+      dataContainerUl.innerHTML += `
+      <li class="scores__record">
+      <span class="scores__name">${each.user}</span>
+      <span class="scores__num">${each.score}</span>
+      </li>`;
     });
 };
 
