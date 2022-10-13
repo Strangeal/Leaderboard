@@ -1,8 +1,9 @@
 // display
 const listPost = (list) => {
   const dataContainerUl = document.querySelector('.scores__line');
+  dataContainerUl.innerHTML = '';
   if (!list) {
-    dataContainerUl.innerHTML = 'No post available 😞';
+    dataContainerUl.innerHTML = '<li class="no__scores>No post available 😞</li>';
     return;
   }
 
