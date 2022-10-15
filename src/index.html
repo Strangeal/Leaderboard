@@ -25,12 +25,18 @@
           <h3 class="form__heading">Add your score</h3>
           <form class="scores__form">
             <div class="form__input">
-              <input class="input__space" id="input__name" type="text" name="name" placeholder="Your name" required>
+              <input class="input__space" id="input__name" type="text" name="name" placeholder="Your name">
             </div>
             <div class="form__input">
-              <input class="input__space" id="input__score" type="number" min="0" name="score" placeholder="Your score" required>
+              <input class="input__space" id="input__score" type="number" min="0" name="score" placeholder="Your score">
             </div>
             <button class="form__btn" type="submit">Submit</button>
+
+            <div class="message">
+              <p class="success">Player scores added successfully</p>
+              <p class="danger">Can't send an empty form</p>
+              <p class="refresh">Scores Updated successfully</p>
+            </div>
           </form>
         </div>
       </div>

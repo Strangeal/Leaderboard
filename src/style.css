@@ -148,3 +148,40 @@ button:hover {
     line-height: 30px;
   }
 }
+
+/* Message */
+
+.message {
+  background-color: var(--base-bg);
+  margin-top: 4rem;
+  text-align: center;
+
+  /* transition: 0.5s ease;; */
+}
+
+.danger,
+.success,
+.refresh {
+  line-height: 0;
+  display: none;
+  animation: slideDown 0.3s linear;
+}
+
+.danger {
+  color: red;
+}
+
+.success,
+.refresh {
+  color: green;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: scale(0.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
