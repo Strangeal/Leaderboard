@@ -3,19 +3,17 @@
 import './style.css';
 import { getScore, addScore } from './modules/scoreBoard.js';
 import listPost from './modules/listPost.js';
-import {formMessage, showRefreshMsg} from './modules/formMessage.js'
-
+import { formMessage, showRefreshMsg } from './modules/formMessage.js';
 
 window.onload = async () => {
   listPost(await getScore());
 };
 const refreshBtn = document.querySelector('.refresh__btn');
 refreshBtn.addEventListener('click', async () => {
-  showRefreshMsg()
+  showRefreshMsg();
   const list = await getScore();
   listPost(list);
 });
-
 
 const inputForm = document.querySelector('.scores__form');
 
@@ -25,7 +23,7 @@ inputForm.addEventListener('submit', async (e) => {
     user: document.querySelector('#input__name').value,
     score: document.querySelector('#input__score').value,
   };
-  formMessage()
+  formMessage();
   inputForm.reset();
-  await addScore(values);  
+  await addScore(values);
 });
